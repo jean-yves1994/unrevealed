@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:beauty_mapping/screens/welcome.dart';
 import 'package:beauty_mapping/utils/global.colors.dart';
 import 'package:beauty_mapping/view/homepage.dart';
 import 'package:beauty_mapping/view/register.view.dart';
@@ -21,6 +22,7 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   AuthController authController = AuthController();
+  bool isLoading = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,3 +1,5 @@
+
+import 'package:beauty_mapping/screens/welcome.dart';
 import 'package:beauty_mapping/view/homepage.dart';
 import 'package:beauty_mapping/view/login.view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -38,7 +40,7 @@ class AuthController extends GetxController {
         email: loginEmailController.text,
         password: loginPasswordController.text);
     if (user != null) {
-      Get.to(() => Homepage());
+      Get.to(() => Welcome());
     }
   }
 

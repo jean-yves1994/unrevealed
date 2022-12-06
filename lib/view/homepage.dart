@@ -9,14 +9,14 @@ import 'package:get/get.dart';
 
 import '../utils/global.colors.dart';
 
-class Homepage extends StatefulWidget {
-  Homepage({super.key});
+class HomepageWithCard extends StatefulWidget {
+  HomepageWithCard({super.key});
 
   @override
-  State<Homepage> createState() => _HomepageState();
+  State<HomepageWithCard> createState() => _HomepageWithCardState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _HomepageWithCardState extends State<HomepageWithCard> {
   final TextEditingController _amountController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _phoneController = TextEditingController();

@@ -13,7 +13,10 @@ class SplashView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Timer(const Duration(seconds: 2), () {
-      Get.to(() => Login());
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (BuildContext context) => Login()),
+          (Route<dynamic> route) => false);
     });
     return Scaffold(
       backgroundColor: GlobalColors.mainColor,
